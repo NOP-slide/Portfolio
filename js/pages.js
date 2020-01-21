@@ -13,7 +13,7 @@ const homeHTML = `
         <div class="col m6">
             <div class="card z-depth-5">
                 <div class="card-image">
-                    <img src="/img/gallery/abstract1.jpg" alt="Project 1">
+                    <img src="img/abstract1.jpg" alt="Project 1">
                     <span class="card-title"></span>
                     <a href="#project1"
                         class="hide-on-med-and-up btn-floating halfway-fab pulse waves-effect waves-light red modal-trigger">
@@ -38,7 +38,7 @@ const homeHTML = `
         <div class="col m6">
             <div class="card z-depth-5">
                 <div class="card-image">
-                    <img src="/img/gallery/abstract2.jpg" alt="Project 2">
+                    <img src="img/abstract2.jpg" alt="Project 2">
                     <span class="card-title"></span>
                     <a href="#project2"
                         class="hide-on-med-and-up btn-floating halfway-fab pulse waves-effect waves-light red modal-trigger">
@@ -77,7 +77,7 @@ const homeHTML = `
         <div class="col m6">
             <div class="card z-depth-5">
                 <div class="card-image">
-                    <img src="/img/gallery/abstract3.jpg" alt="Project 3">
+                    <img src="img/abstract3.jpg" alt="Project 3">
                     <span class="card-title"></span>
                     <a href="#project3"
                         class="hide-on-med-and-up btn-floating halfway-fab pulse waves-effect waves-light red modal-trigger">
@@ -102,7 +102,7 @@ const homeHTML = `
         <div class="col m6">
             <div class="card z-depth-5">
                 <div class="card-image">
-                    <img src="/img/gallery/abstract1.jpg" alt="Project 4">
+                    <img src="img/abstract1.jpg" alt="Project 4">
                     <span class="card-title"></span>
                     <a href="#project4"
                         class="hide-on-med-and-up btn-floating halfway-fab pulse waves-effect waves-light red modal-trigger">
