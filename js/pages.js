@@ -13,7 +13,7 @@ const homeHTML = `
         <div class="col m6">
             <div class="card z-depth-5">
                 <div class="card-image">
-                    <img src="img/abstract1.jpg" alt="Project 1">
+                    <img class="test" src="img/abstract1.jpg" alt="Project 1">
                     <span class="card-title"></span>
                     <a href="#project1"
                         class="hide-on-med-and-up btn-floating halfway-fab pulse waves-effect waves-light red modal-trigger">
