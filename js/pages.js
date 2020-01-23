@@ -180,3 +180,56 @@ const aboutHTML = `<div class="container">
     </div>
 </div>
 </div>`;
+
+
+const contactHTML = `<div class="container">
+<h3 class="center">Get In Touch</h3>
+<br><br>
+<div class="row">
+    <form class="col s12" action="mail.php" method="post" onsubmit="submitForm(event, this)">
+        <div class="row">
+            <div class="input-field col s6">
+                <i class="material-icons prefix">account_circle</i>
+                <input name="name" id="icon_prefix" type="text" class="wht" required>
+                <label for="icon_prefix">Name</label>
+            </div>
+            <div class="input-field col s6">
+                <i class="material-icons prefix">subject</i>
+                <input name="subject" id="icon_telephone" type="text" class="wht" required>
+                <label for="icon_telephone">Subject</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <i class="material-icons prefix">mode_edit</i>
+                <textarea name="message" id="textarea1" class="materialize-textarea wht" required></textarea>
+                <label for="textarea1">Message</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 center">
+                <button type="submit" class="btn waves-effect waves-light">Submit
+                    <i class="material-icons right">send</i>
+                </button>
+            </div>
+        </div>
+    </form>
+</div>
+</div>`;
+
+
+const submitForm = (e, form) => {
+    e.preventDefault();
+
+    fetch('mail.php', {
+        method: 'post',
+        body: JSON.stringify({ name: form.name.value, subject: form.subject.value, message: form.message.value })
+    }).then(function (response) {
+        return response.json();
+    }).then(function (data) {
+        // Success
+
+    }).catch(function (err) {
+        console.log("Error submitting form");
+    });
+}

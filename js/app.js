@@ -28,9 +28,8 @@ const aboutState = function () {
 
 const contactState = function () {
     applyFadeEffect(false);
-    document.querySelector("#content").innerHTML = '<h1>Contact</h1>';
+    document.querySelector("#content").innerHTML = contactHTML;
 }
-
 
 
 // Start the "app"
