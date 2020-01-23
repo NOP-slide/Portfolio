@@ -218,17 +218,21 @@ const contactHTML = `<div class="container">
 </div>
 </div>`;
 
+
+
+// Submit form via ajax to avoid redirecting on Netlify
 const submitForm = e => {
     e.preventDefault();
 
     const form = document.getElementById('msgform');
-    console.log(form);
     const postbody = new URLSearchParams(new FormData(form));
-    console.log(...postbody);
+
     fetch('/', {
         method: 'post',
         body: postbody,
     }).then(res => res.text())
-        .then(data => console.log(data))
+        .then(data => {
+            document.querySelector("#content").innerHTML = data;
+        })
         .catch(err => console.log(err))
 }

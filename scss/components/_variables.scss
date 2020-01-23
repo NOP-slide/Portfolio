@@ -167,7 +167,7 @@ $dropdown-item-height: 50px !default;
 $input-height: 3rem !default;
 $input-border-color: rgb(207, 207, 207) !default;
 $input-border: 1px solid $input-border-color !default;
-$input-background: #fff !default;
+$input-background: rgb(0, 38, 255) !default;
 $input-error-color: $error-color !default;
 $input-success-color: $success-color !default;
 $input-focus-color: $input-border-color !default;
@@ -181,7 +181,7 @@ $input-disabled-solid-color: #949494 !default;
 $input-disabled-border: 1px dotted $input-disabled-color !default;
 $input-invalid-border: 1px solid $input-error-color !default;
 $input-icon-size: 2rem;
-$placeholder-text-color: lighten($input-border-color, 20%) !default;
+$placeholder-text-color: #0000ff !default;
 
 // Radio Buttons
 $radio-fill-color: $secondary-color !default;
