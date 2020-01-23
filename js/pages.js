@@ -187,6 +187,7 @@ const contactHTML = `<div class="container">
 <br><br>
 <div class="row">
     <form class="col s12" method="POST" data-netlify="true" name="contactsubmit" enctype="application/x-www-form-urlencoded">
+    <input type="hidden" name="form-name" value="contactsubmit">
         <div class="row">
             <div class="input-field col s6">
                 <i class="material-icons prefix">account_circle</i>
