@@ -186,7 +186,7 @@ const contactHTML = `<div class="container">
 <h3 class="center">Get In Touch</h3>
 <br><br>
 <div class="row">
-    <form class="col s12" action="mail.php" method="post" onsubmit="submitForm(event, this)">
+    <form class="col s12" method="POST" data-netlify="true">
         <div class="row">
             <div class="input-field col s6">
                 <i class="material-icons prefix">account_circle</i>
@@ -216,20 +216,3 @@ const contactHTML = `<div class="container">
     </form>
 </div>
 </div>`;
-
-
-const submitForm = (e, form) => {
-    e.preventDefault();
-
-    fetch('mail.php', {
-        method: 'post',
-        body: JSON.stringify({ name: form.name.value, subject: form.subject.value, message: form.message.value })
-    }).then(function (response) {
-        return response.json();
-    }).then(function (data) {
-        // Success
-
-    }).catch(function (err) {
-        console.log("Error submitting form");
-    });
-}
