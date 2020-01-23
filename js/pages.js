@@ -232,7 +232,7 @@ const submitForm = e => {
         body: postbody,
     }).then(res => res.text())
         .then(data => {
-            document.querySelector("#content").innerHTML = data;
+            document.querySelector("#content").innerHTML = `<h1>Ok, good</h1>`;
         })
         .catch(err => console.log(err))
 }
