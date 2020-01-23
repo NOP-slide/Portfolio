@@ -29,6 +29,7 @@ const aboutState = function () {
 const contactState = function () {
     applyFadeEffect(false);
     document.querySelector("#content").innerHTML = contactHTML;
+    setTimeout(() => document.querySelector(".fadeform").classList.add("visible"), 50);
 }
 
 

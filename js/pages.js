@@ -182,7 +182,7 @@ const aboutHTML = `<div class="container">
 </div>`;
 
 
-const contactHTML = `<div class="container">
+const contactHTML = `<div class="container fadeform">
 <h3 class="center">Get In Touch</h3>
 <br><br>
 <div class="row">
@@ -219,7 +219,6 @@ const contactHTML = `<div class="container">
 </div>`;
 
 
-
 // Submit form via ajax to avoid redirecting on Netlify
 const submitForm = e => {
     e.preventDefault();
@@ -232,7 +231,8 @@ const submitForm = e => {
         body: postbody,
     }).then(res => res.text())
         .then(data => {
-            document.querySelector("#content").innerHTML = `<h1>Ok, good</h1>`;
+            M.toast({html: 'Thank you for the message!  I will be happy to respond as soon as possible.', displayLength: 8000, outDuration: 2000});
+            page.change(new homeState);
         })
         .catch(err => console.log(err))
 }

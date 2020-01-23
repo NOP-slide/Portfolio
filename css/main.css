@@ -3544,14 +3544,12 @@ small {
       bottom: 0%; } }
   @media only screen and (min-width: 601px) and (max-width: 992px) {
     #toast-container {
-      left: 5%;
-      bottom: 7%;
-      max-width: 90%; } }
+      min-width: 100%;
+      bottom: 0%; } }
   @media only screen and (min-width: 993px) {
     #toast-container {
-      top: 10%;
-      right: 7%;
-      max-width: 86%; } }
+      min-width: 100%;
+      bottom: 0%; } }
 
 .toast {
   border-radius: 2px;
@@ -3561,9 +3559,9 @@ small {
   position: relative;
   max-width: 100%;
   height: auto;
-  min-height: 48px;
+  min-height: 70px;
   line-height: 1.5em;
-  background-color: #323232;
+  background-color: #0062e2;
   padding: 10px 25px;
   font-size: 1.1rem;
   font-weight: 300;
@@ -6483,7 +6481,8 @@ body {
 .row-1,
 .row-2,
 .row-3,
-.row-4 {
+.row-4,
+.fadeform {
   opacity: 0;
   transform: translate(0, 20px);
   transition: all 1.5s; }
@@ -6491,7 +6490,8 @@ body {
 .row-1.visible,
 .row-2.visible,
 .row-3.visible,
-.row-4.visible {
+.row-4.visible,
+.fadeform.visible {
   opacity: 1;
   transform: translate(0, 0); }
 
@@ -6540,5 +6540,12 @@ hr {
 
 .d-none {
   display: none; }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #00796b inset !important;
+  -webkit-text-fill-color: #fff !important; }
 
 /*# sourceMappingURL=main.css.map */

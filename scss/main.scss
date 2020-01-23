@@ -66,7 +66,8 @@ body {
 .row-1,
 .row-2,
 .row-3,
-.row-4 {
+.row-4,
+.fadeform {
   opacity: 0; 
   transform: translate(0, 20px);
   transition: all 1.5s;
@@ -75,7 +76,8 @@ body {
 .row-1.visible,
 .row-2.visible,
 .row-3.visible,
-.row-4.visible {
+.row-4.visible,
+.fadeform.visible {
   opacity: 1;
   transform: translate(0, 0);
 }
@@ -137,4 +139,13 @@ hr {
 
 .d-none {
     display: none;
+}
+
+// Stop Chrome autofill from messing up input backgrounds
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #00796b inset !important;
+    -webkit-text-fill-color: #fff !important;
 }
