@@ -6529,4 +6529,10 @@ hr {
   color: rgba(255, 255, 255, 0.87) !important;
   margin-right: 10px !important; }
 
+.pb-0 {
+  padding-bottom: 0 !important; }
+
+.mb {
+  margin-bottom: 30px !important; }
+
 /*# sourceMappingURL=main.css.map */

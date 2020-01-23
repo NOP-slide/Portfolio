@@ -5,15 +5,15 @@ const homeHTML = `
     <div class="row row-1">
         <div class="col m6 hide-on-small-only">
             <div class="img-content">
-                <h3>Project 1</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla cumque architecto amet sequi
-                deleniti a vero itaque magni sapiente. Laboriosam.</p>
+                <h3>DevBook - Social Media App</h3>
+                <p>RESTful API using NodeJS and Express. Front-end using ReactJS + Redux. Full CRUD functionality via MongoDB.</p>
+                <p class="hide-on-med-and-down">Go ahead -- create your account and start posting!</p>
             </div>
         </div>
         <div class="col m6">
             <div class="card z-depth-5">
                 <div class="card-image">
-                    <img class="test" src="img/abstract1.jpg" alt="Project 1">
+                    <img src="img/project1.jpg" alt="Project 1">
                     <span class="card-title"></span>
                     <a href="#project1"
                         class="hide-on-med-and-up btn-floating halfway-fab pulse waves-effect waves-light red modal-trigger">
@@ -21,10 +21,10 @@ const homeHTML = `
                     </a>
                 </div>
                 <div class="card-content center">
-                    <a class="hide-on-small-only waves-effect waves-light btn"><i class="fas fa-desktop"></i>
+                    <a class="hide-on-small-only waves-effect waves-light btn" href="https://aj-devbook.herokuapp.com/" target="_blank" rel="noopener noreferrer"><i class="fas fa-desktop"></i>
                         Live
                     </a>
-                    <a class="hide-on-small-only waves-effect waves-light btn"><i class="fab fa-github"></i>
+                    <a class="hide-on-small-only waves-effect waves-light btn" href="https://github.com/NOP-slide/dev-book" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i>
                         GitHub
                     </a>
                     <h6 class="dark hide-on-med-and-up">DevBook - Full-Stack Social Media App</h6>
@@ -38,7 +38,7 @@ const homeHTML = `
         <div class="col m6">
             <div class="card z-depth-5">
                 <div class="card-image">
-                    <img src="img/abstract2.jpg" alt="Project 2">
+                    <img src="img/project2.jpg" alt="Project 2">
                     <span class="card-title"></span>
                     <a href="#project2"
                         class="hide-on-med-and-up btn-floating halfway-fab pulse waves-effect waves-light red modal-trigger">
@@ -46,21 +46,20 @@ const homeHTML = `
                     </a>
                 </div>
                 <div class="card-content center">
-                    <a class="hide-on-small-only waves-effect waves-light btn"><i class="fas fa-desktop"></i>
+                    <a class="hide-on-small-only waves-effect waves-light btn" href="https://aj-contact-manager.herokuapp.com/" target="_blank" rel="noopener noreferrer"><i class="fas fa-desktop"></i>
                         Live
                     </a>
-                    <a class="hide-on-small-only waves-effect waves-light btn"><i class="fab fa-github"></i>
+                    <a class="hide-on-small-only waves-effect waves-light btn" href="https://github.com/NOP-slide/contact-manager" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i>
                         GitHub
                     </a>
-                    <h6 class="dark hide-on-med-and-up">ContactManager - Full-Stack App</h6>
+                    <h6 class="dark hide-on-med-and-up">Contact Manager - Full-Stack App</h6>
                 </div>
             </div>
         </div>
         <div class="col m6 hide-on-small-only">
             <div class="img-content">
-                <h3>Project 2</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla cumque architecto amet sequi
-                deleniti a vero itaque magni sapiente. Laboriosam.</p>
+                <h3>Contact Manager - Full Stack App</h3>
+                <p>Front-end using ReactJS with Hooks and the Context API. RESTful back-end API using NodeJS/Express. MongoDB integration.</p>
             </div>
         </div>
     </div>
@@ -69,15 +68,14 @@ const homeHTML = `
     <div class="row row-3">
         <div class="col m6 hide-on-small-only">
             <div class="img-content">
-                <h3>Project 3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla cumque architecto amet sequi
-                deleniti a vero itaque magni sapiente. Laboriosam.</p>
+                <h3>Calorie Tracker - VanillaJS App</h3>
+                <p>Programmed with vanilla JavaScript, using the module design pattern (IIFE-driven). Sessions are saved to local storage for future use.</p>
             </div>
         </div>
         <div class="col m6">
             <div class="card z-depth-5">
                 <div class="card-image">
-                    <img src="img/abstract3.jpg" alt="Project 3">
+                    <img src="img/project3.jpg" alt="Project 3">
                     <span class="card-title"></span>
                     <a href="#project3"
                         class="hide-on-med-and-up btn-floating halfway-fab pulse waves-effect waves-light red modal-trigger">
@@ -85,13 +83,13 @@ const homeHTML = `
                     </a>
                 </div>
                 <div class="card-content center">
-                    <a class="hide-on-small-only waves-effect waves-light btn"><i class="fas fa-desktop"></i>
+                    <a class="hide-on-small-only waves-effect waves-light btn" href="https://nop-slide.github.io/VanillaJS-CalorieTracker/" target="_blank" rel="noopener noreferrer"><i class="fas fa-desktop"></i>
                         Live
                     </a>
-                    <a class="hide-on-small-only waves-effect waves-light btn"><i class="fab fa-github"></i>
+                    <a class="hide-on-small-only waves-effect waves-light btn" href="https://github.com/NOP-slide/VanillaJS-CalorieTracker" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i>
                         GitHub
                     </a>
-                    <h6 class="dark hide-on-med-and-up">CalTracker - VanillaJS Modular App</h6>
+                    <h6 class="dark hide-on-med-and-up">Calorie Tracker - VanillaJS App</h6>
                 </div>
             </div>
         </div>
@@ -102,7 +100,7 @@ const homeHTML = `
         <div class="col m6">
             <div class="card z-depth-5">
                 <div class="card-image">
-                    <img src="img/abstract1.jpg" alt="Project 4">
+                    <img src="img/project4.jpg" alt="Project 4">
                     <span class="card-title"></span>
                     <a href="#project4"
                         class="hide-on-med-and-up btn-floating halfway-fab pulse waves-effect waves-light red modal-trigger">
@@ -122,9 +120,8 @@ const homeHTML = `
         </div>
         <div class="col m6 hide-on-small-only">
             <div class="img-content">
-                <h3>Project 4</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla cumque architecto amet sequi
-                deleniti a vero itaque magni sapiente. Laboriosam.</p>
+                <h3>My Portfolio - VanillaJS</h3>
+                <p>You're looking at it! Coded in vanilla JavaScript, with a smooth single page application feel.</p>
             </div>
         </div>
     </div>
