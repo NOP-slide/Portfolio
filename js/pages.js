@@ -186,7 +186,7 @@ const contactHTML = `<div class="container">
 <h3 class="center">Get In Touch</h3>
 <br><br>
 <div class="row">
-    <form class="col s12" method="POST" data-netlify="true" name="contactsubmit" enctype="application/x-www-form-urlencoded">
+    <form id="msgform" class="col s12" method="POST" data-netlify="true" name="contactsubmit" enctype="application/x-www-form-urlencoded" onsubmit="submitForm(event)">
     <input type="hidden" name="form-name" value="contactsubmit">
         <div class="row">
             <div class="input-field col s6">
@@ -217,3 +217,18 @@ const contactHTML = `<div class="container">
     </form>
 </div>
 </div>`;
+
+const submitForm = e => {
+    e.preventDefault();
+
+    const form = document.getElementById('msgform');
+    console.log(form);
+    const postbody = new URLSearchParams(new FormData(form));
+    console.log(...postbody);
+    fetch('/', {
+        method: 'post',
+        body: postbody,
+    }).then(res => res.json())
+        .then(data => console.log(data))
+        .catch(err => console.log(err))
+}
