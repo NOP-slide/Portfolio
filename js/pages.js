@@ -108,10 +108,10 @@ const homeHTML = `
                     </a>
                 </div>
                 <div class="card-content center">
-                    <a class="hide-on-small-only waves-effect waves-light btn"><i class="fas fa-desktop"></i>
+                    <a class="hide-on-small-only waves-effect waves-light btn" href="https://andrewphelps.netlify.com/" target="_blank" rel="noopener noreferrer"><i class="fas fa-desktop"></i>
                         Live
                     </a>
-                    <a class="hide-on-small-only waves-effect waves-light btn"><i class="fab fa-github"></i>
+                    <a class="hide-on-small-only waves-effect waves-light btn" href="https://github.com/NOP-slide/Portfolio" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i>
                         GitHub
                     </a>
                     <h6 class="dark hide-on-med-and-up">My Portfolio - VanillaJS</h6>
@@ -234,5 +234,9 @@ const submitForm = e => {
             M.toast({html: 'Thank you for the message!  I will be happy to respond as soon as possible.', displayLength: 8000, outDuration: 2000});
             page.change(new homeState);
         })
-        .catch(err => console.log(err))
+        .catch(err => {
+            console.log("POST request error: " + err);
+            M.toast({html: 'Error submitting form! Please try again later.', displayLength: 8000, outDuration: 2000});
+            page.change(new homeState);
+        })
 }
