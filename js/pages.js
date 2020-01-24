@@ -228,7 +228,7 @@ const submitForm = e => {
     const postbody = new URLSearchParams(new FormData(form));
     console.log(...postbody);
 
-    fetch('https://andrewphelps.netlify.com/', {
+    fetch('/', {
         method: 'post',
         body: postbody,
     }).then(res => res.text())
