@@ -4,11 +4,11 @@ class PageState {
         let currentState = null;
     }
 
-    init = () => {
+    init() {
         this.change(new homeState);
     }
 
-    change = (state) => {
+    change(state) {
         this.currentState = state;
     }
 }
