@@ -226,8 +226,8 @@ const submitForm = e => {
     const form = document.getElementById('msgform');
     console.log(form);
     const postbody = new URLSearchParams(new FormData(form));
-    clg(...postbody);
-    
+    console.log(...postbody);
+
     fetch('/', {
         method: 'post',
         body: postbody,
