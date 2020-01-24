@@ -224,8 +224,10 @@ const submitForm = e => {
     e.preventDefault();
 
     const form = document.getElementById('msgform');
+    console.log(form);
     const postbody = new URLSearchParams(new FormData(form));
-
+    clg(...postbody);
+    
     fetch('/', {
         method: 'post',
         body: postbody,
